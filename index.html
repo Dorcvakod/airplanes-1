@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+</head>
+<body>
+
+<div id='ract'></div>
+
+<script id='template' type='text/ractive'>
+	<div id="container">
+		<svg width="600" height="500" version="1.1" viewBox="0 0 600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" >
+			<image xlink:href="img/airplane2.png" x="{{planeX}}" y="{{planeY}}" height="50px" width="50px"/>
+		</svg>
+	</div>
+</script>
+<script src='js/input.js'></script>
+<script src='js/main.js'></script>
+</body>
+</html>
