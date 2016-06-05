@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+	<!-- <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script> -->
+	<script src='js/ractive.js'></script>
 </head>
 <body>
 
@@ -13,7 +14,7 @@
 <script id='template' type='text/ractive'>
 	<div id="container">
 		<svg width="600" height="500" version="1.1" viewBox="0 0 600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" >
-			<image xlink:href="img/airplane2.png" x="{{planeX}}" y="{{planeY}}" height="50px" width="50px"/>
+			<image xlink:href="{{skin}}" x="{{planeX}}" y="{{planeY}}" height="50px" width="50px" style="transition: transform 100ms linear;"/>
 		</svg>
 	</div>
 </script>
