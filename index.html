@@ -13,8 +13,8 @@
 
 <script id='template' type='text/ractive'>
 	<div id="container">
-		<svg width="600" height="500" version="1.1" viewBox="0 0 600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" >
-			<image xlink:href="{{skin}}" x="{{planeX}}" y="{{planeY}}" height="50px" width="50px" style="transition: transform 100ms linear;"/>
+		<svg id="layout" width="{{CANVAS_WIDTH}}" height="{{CANVAS_HEIGHT}}" version="1.1" viewBox="0 0 {{CANVAS_WIDTH}} {{CANVAS_HEIGHT}}" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" >
+			<image xlink:href="{{skin}}" x="{{planeX}}" y="{{planeY}}" height="{{PLANE_HEIGHT}}px" width="{{PLANE_WIDTH}}px"/>
 		</svg>
 	</div>
 </script>
